@@ -16,7 +16,12 @@ int main()
 int main()
 {
 	char* strarr[3] = { "simple","string","array" };    
-	printf("%s\n", strarr[0]);         //strarr이라는 포인터 배열은 simple이라는 char형 포인터 배열 자료를 저장해놓은 배열이다. 이를 출력할 때에는 strarr[0] 자체가 배열을 가리키므로 참조연산자가 필요없다.
+	printf("%s\n", strarr[0]);         
+	/*strarr이라는 포인터 배열은 simple이라는 char형 포인터 배열 자료를 저장해놓은 배열이다. 
+	simple 이라고 표시는 되어있지만 포인터 자료이기 때문에 문자열의 첫번째 주소만을 가진다. 
+        따라서 srtarr[0]은 simple의 주소값을 가리키므로 따로 참조연산자가 필요하지 않다는 의미다.*/
+
+	
 	printf("%s\n", strarr[1]);
 	printf("%s\n", strarr[2]);
 
