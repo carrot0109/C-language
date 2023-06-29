@@ -6,7 +6,8 @@ int main()
 	s = str;										// s와 str은 서로 주솟값 공유
 	while (*s)										// *s가 NULL만 아니라면 계속 출력
 		printf("%s\n", s++);						// C만 출력되나? 라는 예상(공백은 NULL이 아님)
-
+	str = "This is test";								// 직접적으로 대입할 수 있다. 하지만 문제가 발생할 가능성도 존재함
+	printf("%s", str);
 	return 0;										
 }
 
