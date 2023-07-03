@@ -23,7 +23,7 @@ int main()
 	int distY = pos1.ypos - pos2.ypos;
 
 	distance = sqrt((double)(distX * distX + distY * distY));
-	printf("두 점의 거리는 %g입니다.", distance);
+	printf("두 점의 거리는 %g입니다.", distance);	// %g: 소수점이 0으로 된 부분은 제외
 
 	return 0;
 }
