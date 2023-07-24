@@ -52,8 +52,8 @@ void insert(int x) {
 	search(temp);
 
 	if (tail != NULL)
-		tail->next = temp;
-	tail = temp;
+		tail->next = temp;		// tail의 주소값을 통해 저장되어있던 next값을 temp의 주소값으로 설정
+	tail = temp;				// tail의 주소를 새로워진 temp의 주소값으로 변경 (값 자체가 바뀌는 게 아니라 메모리 안의 값은 그대로 남아있고 주소만 바뀌는 것
 	if (head == NULL)
 		head = temp;
 
